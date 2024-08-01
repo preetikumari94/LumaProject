@@ -1,0 +1,37 @@
+package Luma_TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import Luma.pages.AddressBook_page;
+import Luma.pages.MyAccount_page;
+import Luma.pages.MyOrder_page;
+import Luma.pages.Signin_page;
+import Luma.pages.Signout_page;
+
+public class MyOrder_TestCase {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+	        
+		Signin_page si=new Signin_page(driver);
+		Signout_page so=new  Signout_page(driver);
+        MyAccount_page ma=new  MyAccount_page(driver);
+        MyOrder_page mo=new MyOrder_page(driver);
+       
+               si.enterURL();
+               si.clickSignInButton();
+               si.enterUsername("xyz@123gmail.com");
+               si.enterPassword("xyz12345#");
+               si.clickSignin();
+               so.clickWelcome_customerButton();
+               ma.clickMyAccount();
+               mo.clickMyOrder();
+              
+             
+
+	}
+
+}
