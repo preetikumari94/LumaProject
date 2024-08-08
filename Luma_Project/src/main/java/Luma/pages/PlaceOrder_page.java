@@ -16,17 +16,17 @@ public class PlaceOrder_page {
 	By PlaceOrder =By.xpath("//button[@class='action primary checkout']");
 	
 	
-	  public void clickProceedToChecklist() throws InterruptedException  {
+	  public void clickProceedToChecklist()  {
 	    	 driver.findElement(ProceedToChecklist).click();
-	    	 Thread.sleep(2000);
+	    	
 	     }
-	  public void clickNext() throws InterruptedException  {
+	  public void clickNext() {
 	    	 driver.findElement(Next).click();
-	    	 Thread.sleep(2000);
+	    	
 	     }
-	  public void clickPlaceOrder() throws InterruptedException  {
+	  public void clickPlaceOrder()  {
 	    	 driver.findElement(PlaceOrder).click();
-	    	 Thread.sleep(2000);
+	    	
 	     }
 	  
 }

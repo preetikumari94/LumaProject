@@ -22,48 +22,39 @@ public class Women_page {
     	By WomenShorts=By.xpath("//div[@class='categories-menu']//ul[2]//li[2]//a");
 
 
-     public void clickWomen() throws InterruptedException {
+     public void clickWomen()  {
     	 driver.findElement(Women).click();
-    
      }
      
-     public void clickWomenTops() throws InterruptedException {
+     public void clickWomenTops()  {
     	 driver.findElement(WomenTops).click();
-    	 Thread.sleep(2000);
      }
-     public void clickWomenBottoms() throws InterruptedException {
+     public void clickWomenBottoms() {
     	 driver.findElement(WomenBottoms).click();
-    	 Thread.sleep(2000);
      }
      
-     public void clickWomenHoodiesAndSweatshirts() throws InterruptedException {
+     public void clickWomenHoodiesAndSweatshirts()  {
  		driver.findElement(WomenHoodiesAndSweatshirts).click();
- 		Thread.sleep(2000);
  	}
  	
- 	public void clickWomenJackets() throws InterruptedException {
+ 	public void clickWomenJackets() {
  		driver.findElement(WomenJackets).click();
- 		Thread.sleep(2000);
  	}
  	
- 	public void clickWomenTees() throws InterruptedException {
+ 	public void clickWomenTees()  {
  		driver.findElement(WomenTees).click();
- 		Thread.sleep(2000);
  	}
  	
- 	public void clickWomenBrasAndTanks() throws InterruptedException {
+ 	public void clickWomenBrasAndTanks() {
  		driver.findElement(WomenBrasAndTanks).click();
- 		Thread.sleep(2000);
  	}
  	
- 	public void clickWomenPants() throws InterruptedException {
+ 	public void clickWomenPants() {
  		driver.findElement(WomenPants).click();
- 		Thread.sleep(2000);
  	}
  	
- 	public void clickWomenShorts() throws InterruptedException {
+ 	public void clickWomenShorts()  {
  		driver.findElement(WomenShorts).click();
- 		Thread.sleep(2000);
  	}
  	
      

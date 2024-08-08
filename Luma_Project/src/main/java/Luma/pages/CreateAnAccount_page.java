@@ -20,11 +20,9 @@ public class CreateAnAccount_page {
 	By clickSignInButton = By.xpath("//li[@class='authorization-link']//a");
 	By Create_AnAccount= By.xpath("//div[@class='primary']//a");
 	
-	public void enterURL() throws InterruptedException {
+	public void enterURL()  {
 		driver.get("https://magento.softwaretestingboard.com/what-is-new.html");
-		Thread.sleep(2000);
 	}
-	
 	
 	public void clickCreateAnAccount() {
 		driver.findElement(CreateAnAccount).click();
@@ -50,18 +48,18 @@ public class CreateAnAccount_page {
 		driver.findElement(ConfirmPassword).click();
 	}	
 	
-	public void clickButton() throws InterruptedException  {
+	public void clickButton()  {
 		driver.findElement(Button).click();
-		Thread.sleep(2000);
+		
 	}	
 	
 	public void clickSignInButton() {
 		driver.findElement( clickSignInButton).click();
 	}
 	
-	public void clickCreate_AnAccount() throws InterruptedException  {
+	public void clickCreate_AnAccount()   {
 		driver.findElement(Create_AnAccount).click();
-		Thread.sleep(2000);
+		
 	}	
 	
 	

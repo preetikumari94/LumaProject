@@ -32,114 +32,114 @@ public class AddressBook_page {
 	  By SaveAddress =By.xpath("//button[@title='Save Address']");
 	
 	
-	public void clickAddressBook() throws InterruptedException {
+	public void clickAddressBook()  {
 		driver.findElement(AddressBook).click();
-		Thread.sleep(2000);
+		
 		}
-	public void clickAddNewAddress() throws InterruptedException {
+	public void clickAddNewAddress()  {
 		driver.findElement(AddNewAddress).click();
-		Thread.sleep(2000);
+		
 		}
-	public void enterFirstName(String firstName) throws InterruptedException {
+	public void enterFirstName(String firstName) {
 		driver.findElement(FirstName).sendKeys(firstName);
-		Thread.sleep(2000);
+		
 		}
-	public void enterLastName(String lastName) throws InterruptedException {
+	public void enterLastName(String lastName)  {
 		driver.findElement(LastName).sendKeys(lastName);
-		Thread.sleep(2000);
+		
 		}
-	public void enterCompany(String company) throws InterruptedException {
+	public void enterCompany(String company) {
 		driver.findElement(Company).sendKeys(company);
-		Thread.sleep(2000);
+		
 		}
-	public void enterPhoneNumber(String phoneNumber) throws InterruptedException {
+	public void enterPhoneNumber(String phoneNumber) {
 		driver.findElement(PhoneNumber).sendKeys(phoneNumber);
-		Thread.sleep(2000);
+		
 		}
-	public void enterStreetAddress_1(String streetAddress_1) throws InterruptedException {
+	public void enterStreetAddress_1(String streetAddress_1)  {
 		driver.findElement(StreetAddress_1).sendKeys(streetAddress_1);
-		Thread.sleep(2000);
+		
 		}
-	public void enterStreetAddress_2(String streetAddress_2) throws InterruptedException {
+	public void enterStreetAddress_2(String streetAddress_2)  {
 		driver.findElement(StreetAddress_2).sendKeys(streetAddress_2);
-		Thread.sleep(2000);
+		
 		}
-	public void enterStreetAddress_3(String streetAddress_3) throws InterruptedException {
+	public void enterStreetAddress_3(String streetAddress_3)  {
 		driver.findElement(StreetAddress_3).sendKeys(streetAddress_3);
-		Thread.sleep(2000);
+		
 		}
-	public void enterCity(String city) throws InterruptedException {
+	public void enterCity(String city) {
 		driver.findElement(City).sendKeys(city);
-		Thread.sleep(2000);
+		
 		}
-	public void clickState() throws InterruptedException {
+	public void clickState()  {
         driver.findElement(State).click();
-        Thread.sleep(2000);}
+       }
 	
-    public void clickCountry() throws InterruptedException {
+    public void clickCountry()  {
        driver.findElement(Country).click();
-       Thread.sleep(2000);}
+      }
     
-	public void enterZipCode(String zipCode) throws InterruptedException {
+	public void enterZipCode(String zipCode)  {
 		driver.findElement(ZipCode).sendKeys(zipCode);
-		Thread.sleep(2000);
+		
 		}
 	
-	public void clickUseAsMyDefaultBellingAddress() throws InterruptedException {
+	public void clickUseAsMyDefaultBellingAddress()  {
 		driver.findElement(UseAsMyDefaultBellingAddress).click();
-		Thread.sleep(2000);
+		
 		}
-	public void clickUseAsMyDefaultShippingAddress() throws InterruptedException {
+	public void clickUseAsMyDefaultShippingAddress()  {
 		driver.findElement(UseAsMyDefaultShippingAddress).click();
-		Thread.sleep(2000);
+		
 		}
-	public void clickSaveAddress() throws InterruptedException {
+	public void clickSaveAddress() {
 		driver.findElement(SaveAddress).click();
-		Thread.sleep(2000);
+		
 		}
-	public void clearFirstName() throws InterruptedException {
+	public void clearFirstName() {
 		driver.findElement(FirstName).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearLastName() throws InterruptedException {
+	public void clearLastName()  {
 		driver.findElement(LastName).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearCompany() throws InterruptedException {
+	public void clearCompany()  {
 		driver.findElement(Company).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearPhoneNumber() throws InterruptedException {
+	public void clearPhoneNumber()  {
 		driver.findElement(PhoneNumber).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearStreetAddress_1() throws InterruptedException {
+	public void clearStreetAddress_1()  {
 		driver.findElement(StreetAddress_1).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearStreetAddress_2() throws InterruptedException {
+	public void clearStreetAddress_2() {
 		driver.findElement(StreetAddress_2).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearStreetAddress_3() throws InterruptedException {
+	public void clearStreetAddress_3()  {
 		driver.findElement(StreetAddress_3).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearCity() throws InterruptedException {
+	public void clearCity() {
 		driver.findElement(City).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearZipCode() throws InterruptedException {
+	public void clearZipCode() {
 		driver.findElement(ZipCode).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearUseAsMyDefaultBellingAddress() throws InterruptedException {
+	public void clearUseAsMyDefaultBellingAddress()  {
 		driver.findElement(UseAsMyDefaultBellingAddress).clear();
-		Thread.sleep(2000);
+		
 		}
-	public void clearUseAsMyDefaultShippingAddress() throws InterruptedException {
+	public void clearUseAsMyDefaultShippingAddress() {
 		driver.findElement(UseAsMyDefaultShippingAddress).clear();
-		Thread.sleep(2000);
+		
 		}
 	
 }

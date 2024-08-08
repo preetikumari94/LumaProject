@@ -16,17 +16,17 @@ public class ForgotMyPassword_page {
 		By ResetMyPassword =By.xpath("//Button[@class='action submit primary']");
 		
 		
-		public void clickForgotPassword() throws InterruptedException  {
+		public void clickForgotPassword()  {
 			driver.findElement(ForgotPassword).click();
-			Thread.sleep(2000);
+			
 		}
-		public void enterEmail(String email) throws InterruptedException  {
+		public void enterEmail(String email)   {
 			driver.findElement(Email).sendKeys(email);
-			Thread.sleep(2000);
+			
 		}
-		public void clickResendMyPassword() throws InterruptedException  {
+		public void clickResendMyPassword()  {
 			driver.findElement(ResetMyPassword).click();
-			Thread.sleep(2000);
+			
 		}
 		
 		

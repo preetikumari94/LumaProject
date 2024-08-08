@@ -14,8 +14,8 @@ public class MyWishList_page {
 	
 	
 	
-	public void clickMyWishList() throws InterruptedException {
+	public void clickMyWishList()  {
 		driver.findElement(MyWishList).click();
-		Thread.sleep(2000);
+		
 	}
 }

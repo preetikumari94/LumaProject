@@ -2,6 +2,7 @@ package Luma_TestCases;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -18,6 +19,7 @@ public class ForgotMyPassword_TestCases {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		Signin_page si=new Signin_page(driver);
 		ForgotMyPassword_page fp= new ForgotMyPassword_page (driver);

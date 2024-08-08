@@ -15,9 +15,9 @@ public class MyAccount_page {
 	
 	
 	
-	public void clickMyAccount() throws InterruptedException {
+	public void clickMyAccount()  {
 		driver.findElement(MyAccount).click();
-		Thread.sleep(2000);
+		
 	
 	}
 

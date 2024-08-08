@@ -18,33 +18,33 @@ public class MyCart_page {
 	By DeleteMiniCart = By.linkText("Remove");
 	By ok =By.xpath("//button[@class='action-primary action-accept']");
 	
-	  public void clickSelectItem() throws InterruptedException  {
+	  public void clickSelectItem()  {
 	    	 driver.findElement(selectItem).click();
-	    	 Thread.sleep(2000);
+	    	
 	     }
-	  public void clickSelectSize() throws InterruptedException {
+	  public void clickSelectSize() {
 	    	 driver.findElement(selectSize).click();
-	    	 Thread.sleep(2000);
+	    	 
 	     }
-	  public void clickSelectColor() throws InterruptedException  {
+	  public void clickSelectColor()  {
 	    	 driver.findElement(selectColor).click();
-	    	 Thread.sleep(2000);
+	    	
 	     }
-	  public void clickAddToCart() throws InterruptedException {
+	  public void clickAddToCart()  {
 	    	 driver.findElement(AddToCart).click();
-	    	 Thread.sleep(2000);
+	    	
 	     }
-   	public void clickMiniCart() throws InterruptedException {
+   	public void clickMiniCart()  {
 	    driver.findElement(MiniCart).click();
-	    Thread.sleep(2000);
+	   
          }
-	public void clickDeleteMiniCart() throws InterruptedException {
+	public void clickDeleteMiniCart()  {
 	    driver.findElement(DeleteMiniCart).click();
-	    Thread.sleep(2000);
+	   
          }
-	public void clickok() throws InterruptedException {
+	public void clickok()  {
 	    driver.findElement(ok).click();
-	    Thread.sleep(2000);
+	   
          }
 	
 	

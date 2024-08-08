@@ -1,5 +1,7 @@
 package Luma_TestCases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,6 +16,7 @@ public class MyDownloadableProducts_TestCase {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		Signin_page si=new Signin_page(driver);
 		Signout_page so=new  Signout_page(driver);

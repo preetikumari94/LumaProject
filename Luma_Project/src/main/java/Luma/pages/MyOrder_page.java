@@ -12,9 +12,9 @@ public class MyOrder_page {
 	
     By MyOrder =By.xpath("//div[@id='block-collapsible-nav']//ul//li[2]//a");
     
-    public void clickMyOrder() throws InterruptedException {
+    public void clickMyOrder()  {
 		driver.findElement(MyOrder).click();
-		Thread.sleep(2000);
+		
 		}
     
     

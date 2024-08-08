@@ -20,9 +20,9 @@ public class Signin_page {
 	By Signin = By.xpath("//button[@class='action login primary']");
 	
 	
-	public void enterURL() throws InterruptedException {
+	public void enterURL()  {
 		driver.get("https://magento.softwaretestingboard.com");
-		Thread.sleep(2000);
+		
 	}
 	
 	public void clickSignInButton() {
@@ -38,9 +38,9 @@ public class Signin_page {
 		driver.findElement(Password).sendKeys(password);
 	}
 	
-	public void clickSignin() throws InterruptedException  {
+	public void clickSignin()   {
 		driver.findElement(Signin).click();
-		Thread.sleep(2000);
+		
 	}
 	
 	

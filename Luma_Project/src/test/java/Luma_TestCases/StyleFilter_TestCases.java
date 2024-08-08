@@ -1,7 +1,10 @@
 package Luma_TestCases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Luma.pages.CategoryFilter_page;
 import Luma.pages.Gear_page;
@@ -15,6 +18,8 @@ public class StyleFilter_TestCases {
 	public static void main(String[] args) throws InterruptedException {
 		 driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 		 Signin_page si=new Signin_page(driver);
 		 Women_page wp=new Women_page(driver);

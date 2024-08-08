@@ -23,48 +23,48 @@ public class Men_page {
     	
 
 
-     public void clickMen() throws InterruptedException {
+     public void clickMen() {
     	 driver.findElement(Men).click();
     
      }
      
-     public void clickMenTops() throws InterruptedException {
+     public void clickMenTops() {
     	 driver.findElement(MenTops).click();
-    	 Thread.sleep(2000);
+    	 
      }
-     public void clickMenBottoms() throws InterruptedException {
+     public void clickMenBottoms()  {
     	 driver.findElement(MenBottoms).click();
-    	 Thread.sleep(2000);
+    	
      }
      
-     public void clickMenHoodiesAndSweatshirts() throws InterruptedException {
+     public void clickMenHoodiesAndSweatshirts() {
  		driver.findElement(MenHoodiesAndSweatshirts).click();
- 		Thread.sleep(2000);
+ 		
  	}
  	
- 	public void clickMenJackets() throws InterruptedException {
+ 	public void clickMenJackets() {
  		driver.findElement(MenJackets).click();
- 		Thread.sleep(2000);
+ 		
  	}
  	
- 	public void clickMenTees() throws InterruptedException {
+ 	public void clickMenTees()  {
  		driver.findElement(MenTees).click();
- 		Thread.sleep(2000);
+ 		
  	}
  	
- 	public void clickMenTanks() throws InterruptedException {
+ 	public void clickMenTanks() {
  		driver.findElement(MenTanks).click();
- 		Thread.sleep(2000);
+ 		
  	}
  	
- 	public void clickMenPants() throws InterruptedException {
+ 	public void clickMenPants()  {
  		driver.findElement(MenPants).click();
- 		Thread.sleep(2000);
+ 		
  	}
  	
- 	public void clickMenShorts() throws InterruptedException {
+ 	public void clickMenShorts()  {
  		driver.findElement(MenShorts).click();
- 		Thread.sleep(2000);
+ 		
  	}
  	
 	}

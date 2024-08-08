@@ -18,14 +18,14 @@ public class Search_page {
 			driver.findElement(search).click();
 		}
 		
-		public void enterSearchItem (String enterSearchItem ) throws InterruptedException {
+		public void enterSearchItem (String enterSearchItem ) {
 			driver.findElement(enterSearchItems).sendKeys(enterSearchItem);
-			Thread.sleep(2000);
+			
 		}
 		
-		public void clicksearchButton () throws InterruptedException {
+		public void clicksearchButton ()  {
 			driver.findElement(searchButton).click();
-			Thread.sleep(2000);
+			
 		}
       
 		  public void clearSearch() {

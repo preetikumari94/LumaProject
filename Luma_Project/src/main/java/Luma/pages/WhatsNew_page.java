@@ -37,69 +37,69 @@ public class WhatsNew_page {
 		
 	}
 	
-	public void clickWomenHoodiesAndSweatshirts() throws InterruptedException {
+	public void clickWomenHoodiesAndSweatshirts()  {
 		driver.findElement(WomenHoodiesAndSweatshirts).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickWomenJackets() throws InterruptedException {
+	public void clickWomenJackets() {
 		driver.findElement(WomenJackets).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickWomenTees() throws InterruptedException {
+	public void clickWomenTees()  {
 		driver.findElement(WomenTees).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickWomenBrasAndTanks() throws InterruptedException {
+	public void clickWomenBrasAndTanks() {
 		driver.findElement(WomenBrasAndTanks).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickWomenPants() throws InterruptedException {
+	public void clickWomenPants()  {
 		driver.findElement(WomenPants).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickWomenShorts() throws InterruptedException {
+	public void clickWomenShorts()  {
 		driver.findElement(WomenShorts).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickNewInMen() throws InterruptedException {
+	public void clickNewInMen() {
 		driver.findElement(NewInMen).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickMenHoodiesAndSweatshirts() throws InterruptedException {
+	public void clickMenHoodiesAndSweatshirts()  {
 		driver.findElement(MenHoodiesAndSweatshirts).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickMenJackets() throws InterruptedException {
+	public void clickMenJackets()  {
 		driver.findElement(MenJackets).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickMenTees() throws InterruptedException {
+	public void clickMenTees() {
 		driver.findElement(MenTees).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickMenTanks() throws InterruptedException {
+	public void clickMenTanks()  {
 		driver.findElement(MenTanks).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickMenPants() throws InterruptedException {
+	public void clickMenPants()  {
 		driver.findElement(MenPants).click();
-		Thread.sleep(2000);
+		
 	}
 	
-	public void clickMenShorts() throws InterruptedException {
+	public void clickMenShorts() {
 		driver.findElement(MenShorts).click();
-		Thread.sleep(2000);
+		
 	}
 	
 }

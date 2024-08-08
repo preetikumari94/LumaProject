@@ -18,9 +18,9 @@ public class Signout_page {
 			driver.findElement(Button).click();
 		}
 		
-		public void Signout() throws InterruptedException {
+		public void Signout() {
 			driver.findElement(Signout).click();
-			Thread.sleep(2000);
+			
 		
 		}
 

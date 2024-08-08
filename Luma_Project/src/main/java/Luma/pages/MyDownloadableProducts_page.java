@@ -14,9 +14,9 @@ public class MyDownloadableProducts_page {
 	
 	
 	
-	public void clickMyDownloadableProducts() throws InterruptedException {
+	public void clickMyDownloadableProducts()  {
 		driver.findElement( MyDownloadableProducts).click();
-		Thread.sleep(2000);
+		
 	}
 
 

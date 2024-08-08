@@ -42,83 +42,83 @@ public class CategoryFilter_page {
     By GearWTimepiece =By.xpath("//div[@class='filter-options']//div//div[2]//ol//li[4]//a");
     
     
-	public void clickWomenTopCategory () throws InterruptedException {
+	public void clickWomenTopCategory ()  {
 	  driver.findElement(WomenTopCategory).click();
-	  Thread.sleep(2000);}
-	public void clickWomenJackets () throws InterruptedException {
+	 }
+	public void clickWomenJackets ()  {
 		  driver.findElement(WomenJackets).click();
-		  Thread.sleep(2000);}
-	public void clickWomenHoodiesAndSweatshirts() throws InterruptedException {
+		  }
+	public void clickWomenHoodiesAndSweatshirts() {
 		  driver.findElement(WomenHoodiesAndSweatshirts).click();
-		  Thread.sleep(2000);}
-	public void clickWomenTees () throws InterruptedException {
+		  }
+	public void clickWomenTees () {
 		  driver.findElement(WomenTees).click();
-		  Thread.sleep(2000);}
-	public void clickWomenBraAndTank () throws InterruptedException {
+		 }
+	public void clickWomenBraAndTank ()  {
 		  driver.findElement(WomenBrasAndTanks).click();
-		  Thread.sleep(2000);}
+		 }
 	
-	public void clickMenTopCategory () throws InterruptedException {
+	public void clickMenTopCategory ()  {
 		  driver.findElement(MenTopCategory).click();
-		  Thread.sleep(2000);}
-		public void clickMenJackets () throws InterruptedException {
+		  }
+		public void clickMenJackets ()  {
 			  driver.findElement(MenJackets).click();
-			  Thread.sleep(2000);}
-		public void clickMenHoodiesAndSweatshirts() throws InterruptedException {
+			 }
+		public void clickMenHoodiesAndSweatshirts()  {
 			  driver.findElement(MenHoodiesAndSweatshirts).click();
-			  Thread.sleep(2000);}
-		public void clickMenTees () throws InterruptedException {
+			  }
+		public void clickMenTees () {
 			  driver.findElement(MenTees).click();
-			  Thread.sleep(2000);}
-		public void clickMenTank () throws InterruptedException {
+			 }
+		public void clickMenTank () {
 			  driver.findElement(MenTanks).click();
-			  Thread.sleep(2000);}
+			 }
 		
-		public void clickWomenBottomCategory () throws InterruptedException {
+		public void clickWomenBottomCategory ()  {
 			  driver.findElement(WomenBottomCategory).click();
-			  Thread.sleep(2000);}	
-		public void clickWomenPants () throws InterruptedException {
+			  }	
+		public void clickWomenPants ()  {
 			  driver.findElement(WomenPants).click();
-			  Thread.sleep(2000);}	
-		public void clickWomenShorts () throws InterruptedException {
+			  }	
+		public void clickWomenShorts ()  {
 				  driver.findElement(WomenShorts).click();
-				  Thread.sleep(2000);}
+				  }
 		
-		public void clickMenBottomCategory () throws InterruptedException {
+		public void clickMenBottomCategory ()  {
 			  driver.findElement(MenBottomCategory).click();
-			  Thread.sleep(2000);}	
-		public void clickMenPants() throws InterruptedException {
+			 }	
+		public void clickMenPants()  {
 					  driver.findElement(MenPants).click();
-					  Thread.sleep(2000);}	
-		public void clickMenShorts () throws InterruptedException {
+					 }	
+		public void clickMenShorts ()  {
 					  driver.findElement(MenShorts).click();
-					  Thread.sleep(2000);}	
+					 }	
 		
-		public void clickGearFitnessEquipmentCategory () throws InterruptedException {
+		public void clickGearFitnessEquipmentCategory ()  {
 			  driver.findElement(GearFitnessEquipmentCategory).click();
-			  Thread.sleep(2000);}
-		public void clickGearFCardio () throws InterruptedException {
+			 }
+		public void clickGearFCardio ()  {
 				  driver.findElement(GearFCardio).click();
-				  Thread.sleep(2000);}	
-		public void clickGearFExercise () throws InterruptedException {
+				  }	
+		public void clickGearFExercise ()  {
 			  driver.findElement(GearFExercise).click();
-			  Thread.sleep(2000);}	
+			 }	
 		
-		public void clickGearWatchesCategory () throws InterruptedException {
+		public void clickGearWatchesCategory ()  {
 			  driver.findElement( GearWatchesCategory).click();
-			  Thread.sleep(2000);}	
-		public void clickGearWElectronic () throws InterruptedException {
+			  }	
+		public void clickGearWElectronic ()  {
 			  driver.findElement(GearWElectronic).click();
-			  Thread.sleep(2000);}	
-		public void clickGearWExercise () throws InterruptedException {
+			 }	
+		public void clickGearWExercise () {
 			  driver.findElement(GearWExercise).click();
-			  Thread.sleep(2000);}	
-		public void clickGearWFashion () throws InterruptedException {
+			  }	
+		public void clickGearWFashion ()  {
 			  driver.findElement(GearWFashion).click();
-			  Thread.sleep(2000);}	
-		public void clickGearWTimepiece () throws InterruptedException {
+			 }	
+		public void clickGearWTimepiece ()  {
 			  driver.findElement(GearWTimepiece).click();
-			  Thread.sleep(2000);}	
+			  }	
 		
 			  
 		

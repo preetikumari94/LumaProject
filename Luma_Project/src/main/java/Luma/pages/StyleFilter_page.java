@@ -9,12 +9,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class StyleFilter_page {
 
- WebDriver driver;
-   // private WebDriverWait wait;	
+ //WebDriver driver;
+     WebDriverWait wait;	
     
     public StyleFilter_page(WebDriver driver) {
-    	 this.driver = driver;
-        // this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	// this.driver = driver;
+         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
      }
      
    
@@ -85,197 +85,197 @@ public class StyleFilter_page {
 	By GearTote =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[7]//a");
 		
 	
-	public void clickWomenStyle () throws InterruptedException {
-     //   wait.until(ExpectedConditions.elementToBeClickable(Style)).click();
-        driver.findElement(WomenStyle).click();
-		 Thread.sleep(2000);}
-	public void clickWomenInsulated () throws InterruptedException {
-       // wait.until(ExpectedConditions.elementToBeClickable(Style)).click();
-        driver.findElement(WomenInsulated).click();
-		 Thread.sleep(2000);}
-    public void clickWomenJacket () throws InterruptedException {
-         driver.findElement(WomenJacket).click();
-         Thread.sleep(2000);}
-    public void clickWomenLightweight () throws InterruptedException {
-        driver.findElement(WomenLightweight).click();
-        Thread.sleep(2000);}
-    public void clickWomenHooded () throws InterruptedException {
-        driver.findElement(WomenHooded).click();
-        Thread.sleep(2000);}
-    public void clickWomenHeavyDuty () throws InterruptedException {
-        driver.findElement( WomenHeavyDuty).click();
-        Thread.sleep(2000);}
-    public void clickWomenRainCoat () throws InterruptedException {
-        driver.findElement(WomenRainCoat).click();
-        Thread.sleep(2000);}
-    public void clickWomenHardShell () throws InterruptedException {
-        driver.findElement(WomenHardShell).click();
-        Thread.sleep(2000);}
-    public void clickWomenSoftShell  () throws InterruptedException {
-        driver.findElement( WomenSoftShell ).click();
-        Thread.sleep(2000);}
-    public void clickWomenWindbreaker () throws InterruptedException {
-        driver.findElement( WomenWindbreaker).click();
-        Thread.sleep(2000);}
-    public void clickWomen_oneFourthzip () throws InterruptedException {
-        driver.findElement( Women_oneFourthzip).click();
-        Thread.sleep(2000);}
-    public void clickWomenFullZip () throws InterruptedException {
-        driver.findElement(WomenFullZip).click();
-        Thread.sleep(2000);}
-    public void clickWomenReversible () throws InterruptedException {
-        driver.findElement(WomenReversible).click();
-        Thread.sleep(2000);}
-    public void clickWomenBra () throws InterruptedException {
-        driver.findElement(WomenBra).click();
-        Thread.sleep(2000);}
-    public void clickWomenSweatshirt () throws InterruptedException {
-        driver.findElement(WomenSweatshirt).click();
-        Thread.sleep(2000);}
-    public void clickWomenTank () throws InterruptedException {
-        driver.findElement(WomenTank).click();
-        Thread.sleep(2000);}
-    public void clickWomenTee () throws InterruptedException {
-        driver.findElement(WomenTee).click();
-        Thread.sleep(2000);}
-    public void clickWomenPullover () throws InterruptedException {
-        driver.findElement( WomenPullover).click();
-        Thread.sleep(2000);}
-    public void clickWomenHoodie () throws InterruptedException {
-        driver.findElement(WomenHoodie).click();
-        Thread.sleep(2000);}
-    public void clickWomenCamisole() throws InterruptedException {
-        driver.findElement(WomenCamisole).click();
-        Thread.sleep(2000);}
+	public void clickWomenStyle ()  {
+       wait.until(ExpectedConditions.elementToBeClickable(WomenStyle)).click();}
+//        driver.findElement(WomenStyle).click();
+//		 Thread.sleep(2000);}
+	public void clickWomenInsulated ()  {
+       wait.until(ExpectedConditions.elementToBeClickable(WomenInsulated)).click();}
+//        driver.findElement(WomenInsulated).click();
+//		 Thread.sleep(2000);}
+    public void clickWomenJacket ()  {
+       wait.until(ExpectedConditions.elementToBeClickable(WomenJacket)).click();}
+        
+    public void clickWomenLightweight () {
+    	 wait.until(ExpectedConditions.elementToBeClickable(WomenLightweight)).click();}
+        
+    public void clickWomenHooded () {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenHooded)).click();
+        }
+    public void clickWomenHeavyDuty () {
+    	wait.until(ExpectedConditions.elementToBeClickable( WomenHeavyDuty)).click();
+       }
+    public void clickWomenRainCoat ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenRainCoat)).click();
+        }
+    public void clickWomenHardShell ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenHardShell)).click();
+       }
+    public void clickWomenSoftShell  ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable( WomenSoftShell )).click();
+        }
+    public void clickWomenWindbreaker ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable( WomenWindbreaker)).click();
+        }
+    public void clickWomen_oneFourthzip () {
+    	wait.until(ExpectedConditions.elementToBeClickable( Women_oneFourthzip)).click();
+        }
+    public void clickWomenFullZip ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenFullZip)).click();
+       }
+    public void clickWomenReversible ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenReversible)).click();
+        }
+    public void clickWomenBra ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenBra)).click();
+       }
+    public void clickWomenSweatshirt ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenSweatshirt)).click();
+        }
+    public void clickWomenTank () {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenTank)).click();
+        }
+    public void clickWomenTee ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenTee)).click();
+        }
+    public void clickWomenPullover ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable( WomenPullover)).click();
+        }
+    public void clickWomenHoodie ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenHoodie)).click();
+        }
+    public void clickWomenCamisole()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenCamisole)).click();
+        }
     
     
-    public void clickMenStyle () throws InterruptedException {
-        driver.findElement(MenStyle).click();
-        Thread.sleep(2000);}
-    public void clickMenInsulated () throws InterruptedException {
-        driver.findElement(MenInsulated).click();
-        Thread.sleep(2000);}
-    public void clickMenJacket () throws InterruptedException {
-        driver.findElement(MenJacket).click();
-        Thread.sleep(2000);}
-    public void clickMenLightweight () throws InterruptedException {
-        driver.findElement(MenLightweight).click();
-        Thread.sleep(2000);}
-    public void clickMenHooded () throws InterruptedException {
-        driver.findElement(MenHooded).click();
-        Thread.sleep(2000);}
-    public void clickMenHeavyDuty () throws InterruptedException {
-        driver.findElement(MenHeavyDuty).click();
-        Thread.sleep(2000);}
-    public void clickMenRainCoat () throws InterruptedException {
-        driver.findElement(MenRainCoat).click();
-        Thread.sleep(2000);}
-    public void clickMenHardShell () throws InterruptedException {
-        driver.findElement(MenHardShell).click();
-        Thread.sleep(2000);}
-    public void clickMenSoftShell  () throws InterruptedException {
-        driver.findElement(MenSoftShell ).click();
-        Thread.sleep(2000);}
-    public void clickMenWindbreaker () throws InterruptedException {
-        driver.findElement(MenWindbreaker).click();
-        Thread.sleep(2000);}
-    public void clickMen_oneFourthzip () throws InterruptedException {
-        driver.findElement( Men_oneFourthzip).click();
-        Thread.sleep(2000);}
-    public void clickMenFullZip () throws InterruptedException {
-        driver.findElement(MenFullZip).click();
-        Thread.sleep(2000);}
-    public void clickMenReversible () throws InterruptedException {
-        driver.findElement(MenReversible).click();
-        Thread.sleep(2000);}
-    public void clickMenTank () throws InterruptedException {
-        driver.findElement(MenTank).click();
-        Thread.sleep(2000);}
-    public void clickMenTee () throws InterruptedException {
-        driver.findElement(MenTee).click();
-        Thread.sleep(2000);}
+    public void clickMenStyle ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenStyle)).click();
+       }
+    public void clickMenInsulated ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenInsulated)).click();
+        }
+    public void clickMenJacket ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenJacket)).click();
+       }
+    public void clickMenLightweight () {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenLightweight)).click();
+        }
+    public void clickMenHooded ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenHooded)).click();
+        }
+    public void clickMenHeavyDuty ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenHeavyDuty)).click();
+       }
+    public void clickMenRainCoat ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenRainCoat)).click();
+        }
+    public void clickMenHardShell ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenHardShell)).click();
+       }
+    public void clickMenSoftShell  () {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenSoftShell) ).click();
+        }
+    public void clickMenWindbreaker ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenWindbreaker)).click();
+      }
+    public void clickMen_oneFourthzip ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable( Men_oneFourthzip)).click();
+       }
+    public void clickMenFullZip () {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenFullZip)).click();
+       }
+    public void clickMenReversible () {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenReversible)).click();
+        }
+    public void clickMenTank ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenTank)).click();
+        }
+    public void clickMenTee ()  {
+    	wait.until(ExpectedConditions.elementToBeClickable(MenTee)).click();
+        }
     
     
     public void clickGearStyle () throws InterruptedException {
-        driver.findElement(GearStyle).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearStyle)).click();
+        }
     public void clickGearBackpack () throws InterruptedException {
-        driver.findElement(GearBackpack).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearBackpack)).click();
+        }
     public void clickGearLuggage () throws InterruptedException {
-        driver.findElement(GearLuggage).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearLuggage)).click();
+        }
     public void clickGearDuffel () throws InterruptedException {
-        driver.findElement(GearDuffel).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearDuffel)).click();
+        ;}
     public void clickGearMessenger () throws InterruptedException {
-        driver.findElement(GearMessenger).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearMessenger)).click();
+        }
     public void clickGearLaptop () throws InterruptedException {
-        driver.findElement(GearLaptop).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearLaptop)).click();
+        }
     public void clickGearExercise () throws InterruptedException {
-        driver.findElement(GearExercise).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearExercise)).click();
+       }
     public void clickGearTote () throws InterruptedException {
-        driver.findElement(GearTote).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(GearTote)).click();
+        }
     
     public void clickWomenBottomStyle () throws InterruptedException {
-        driver.findElement( WomenBottomStyle).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable( WomenBottomStyle)).click();
+        }
     public void clickWomenBaseLayer () throws InterruptedException {
-        driver.findElement(WomenBaseLayer).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenBaseLayer)).click();
+        }
     public void clickWomenBasic () throws InterruptedException {
-        driver.findElement(WomenBasic).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenBasic)).click();
+        }
     public void clickWomenCapri () throws InterruptedException {
-        driver.findElement(WomenCapri).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenCapri)).click();
+        }
     public void clickWomenCompression () throws InterruptedException {
-        driver.findElement(WomenCompression).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenCompression)).click();
+        }
     public void clickWomenLeggings () throws InterruptedException {
-        driver.findElement(WomenLeggings).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenLeggings)).click();
+       }
     public void clickWomenParachute () throws InterruptedException {
-        driver.findElement( WomenParachute).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable( WomenParachute)).click();
+        }
     public void clickWomenSnug () throws InterruptedException {
-        driver.findElement(WomenSnug).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenSnug)).click();
+        }
     public void clickWomenSweatpants () throws InterruptedException {
-        driver.findElement(WomenSweatpants ).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenSweatpants )).click();
+        }
     public void clickWomenTrackPants () throws InterruptedException {
-        driver.findElement(WomenTrackPants).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(WomenTrackPants)).click();
+        }
     
     public void clickMenBottomStyle () throws InterruptedException {
-        driver.findElement(MenBottomStyle).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenBottomStyle)).click();
+       }
     public void clickMenBaseLayer () throws InterruptedException {
-        driver.findElement(MenBaseLayer).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenBaseLayer)).click();
+        }
     public void clickMenCompression () throws InterruptedException {
-        driver.findElement(MenCompression).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenCompression)).click();
+       }
     public void clickMenLeggings () throws InterruptedException {
-        driver.findElement(MenLeggings).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenLeggings)).click();
+       }
     public void clickMenSweatpants () throws InterruptedException {
-        driver.findElement(MenSweatpants).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenSweatpants)).click();
+        }
     public void clickMenTights () throws InterruptedException {
-        driver.findElement(MenTights).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenTights)).click();
+        }
     public void clickMenTrackPants () throws InterruptedException {
-        driver.findElement(MenTrackPants).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenTrackPants)).click();
+       }
     public void clickMenWorkoutPants () throws InterruptedException {
-        driver.findElement(MenWorkoutPants).click();
-        Thread.sleep(2000);}
+    	wait.until(ExpectedConditions.elementToBeClickable(MenWorkoutPants)).click();
+       }
     
 	
 

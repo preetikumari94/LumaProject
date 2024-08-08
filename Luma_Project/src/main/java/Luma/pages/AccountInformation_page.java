@@ -22,53 +22,53 @@ public class AccountInformation_page {
     By Save =By.xpath("//div[@class='block block-content']//form//div[2]//button[@type='submit']");
    
     
-    public void clickAccountInformation() throws InterruptedException {
+    public void clickAccountInformation()  {
 		driver.findElement(AccountInformation).click();
-		Thread.sleep(2000);}
-    public void enterFirstName(String firstName) throws InterruptedException {
+		}
+    public void enterFirstName(String firstName)  {
 		driver.findElement(FirstName).sendKeys(firstName);
-		Thread.sleep(2000);}
-    public void enterLastName(String lastName) throws InterruptedException {
+		}
+    public void enterLastName(String lastName) {
 		driver.findElement(LastName).sendKeys(lastName);
-		Thread.sleep(2000);}
-	 public void clickChangeEmail() throws InterruptedException {
+		}
+	 public void clickChangeEmail()  {
 		driver.findElement(ChangeEmail).click();
-		Thread.sleep(2000);  }
-	 public void clickChangePassword() throws InterruptedException {
+		  }
+	 public void clickChangePassword()  {
 		driver.findElement(ChangePassword).click();
-		Thread.sleep(2000);}
-	 public void enterEmail(String email) throws InterruptedException {
+		}
+	 public void enterEmail(String email)  {
 		driver.findElement(Email).sendKeys(email);
-		Thread.sleep(2000);}
-	 public void enterCurrentPassword(String currentPassword) throws InterruptedException {
+		}
+	 public void enterCurrentPassword(String currentPassword)  {
 		driver.findElement(CurrentPassword).sendKeys(currentPassword);
-		Thread.sleep(2000);}
-	 public void enterNewPassword(String newPassword) throws InterruptedException {
+		}
+	 public void enterNewPassword(String newPassword)  {
 		driver.findElement( NewPassword).sendKeys(newPassword);
-		Thread.sleep(2000);}
-	 public void enterConfirmPassword(String confirmPassword) throws InterruptedException {
+		}
+	 public void enterConfirmPassword(String confirmPassword)  {
 		driver.findElement(ConfirmPassword).sendKeys(confirmPassword);
-		Thread.sleep(2000);}
-	 public void clickSave() throws InterruptedException {
+		}
+	 public void clickSave() {
 		driver.findElement( Save).click();
-		Thread.sleep(2000);}
-	  public void clearFirstName() throws InterruptedException {
+		}
+	  public void clearFirstName()  {
 			driver.findElement(FirstName).clear();
-			Thread.sleep(2000);}
-	    public void clearLastName() throws InterruptedException {
+			}
+	    public void clearLastName()  {
 			driver.findElement(LastName).clear();
-			Thread.sleep(2000);}
+			}
 		
-		 public void clearEmail() throws InterruptedException {
+		 public void clearEmail()  {
 			driver.findElement(Email).clear();
-			Thread.sleep(2000);}
-		 public void clearCurrentPassword() throws InterruptedException {
+			}
+		 public void clearCurrentPassword() {
 			driver.findElement(CurrentPassword).clear();
-			Thread.sleep(2000);}
-		 public void clearNewPassword() throws InterruptedException {
+			}
+		 public void clearNewPassword()  {
 			driver.findElement( NewPassword).clear();
-			Thread.sleep(2000);}
-		 public void clearConfirmPassword() throws InterruptedException {
+			}
+		 public void clearConfirmPassword() {
 			driver.findElement(ConfirmPassword).clear();
-			Thread.sleep(2000);}
+			}
 }

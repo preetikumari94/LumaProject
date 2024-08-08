@@ -14,8 +14,8 @@ public class StoredPaymentMethods_page {
 	
 	
 	
-	public void clickStoredPaymentMethods() throws InterruptedException {
+	public void clickStoredPaymentMethods()  {
 		driver.findElement(StoredPaymentMethods).click();
-		Thread.sleep(2000);
+		
 	}
 }

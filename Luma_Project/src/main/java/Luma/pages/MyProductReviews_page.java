@@ -14,8 +14,8 @@ public class MyProductReviews_page {
 	
 	
 	
-	public void clickMyProductReviews() throws InterruptedException {
+	public void clickMyProductReviews() {
 		driver.findElement(MyProductReviews).click();
-		Thread.sleep(2000);
+		
 	}
 }

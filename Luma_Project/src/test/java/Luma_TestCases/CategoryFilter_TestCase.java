@@ -1,5 +1,7 @@
 package Luma_TestCases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,6 +16,7 @@ public class CategoryFilter_TestCase {
 	public static void main(String[] args) throws InterruptedException {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		 Signin_page si=new Signin_page(driver);
 		 Women_page wp=new Women_page(driver);
