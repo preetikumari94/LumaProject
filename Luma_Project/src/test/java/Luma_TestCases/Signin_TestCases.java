@@ -11,24 +11,31 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Luma.pages.Signin_page;
-
-
 public class Signin_TestCases {
+	
+   WebDriver driver;
+   Signin_page si;
 
-	public static void main(String[] args) throws InterruptedException, IOException {
-		WebDriver driver=new ChromeDriver();
+    @BeforeMethod
+    public void launchBrowser() {
+		 driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		Signin_page si=new Signin_page(driver);
+        }
+
+ @Test
+   public void Signin_TC() throws IOException  {
+		si=new Signin_page(driver);
 		si.enterURL();
 		si.clickSignInButton();
 		
 		
-		String path=("C:\\Users\\abhic\\OneDrive\\Desktop\\LumaSigninData.xlsx");
-		FileInputStream fis=new FileInputStream(path);
+		FileInputStream fis=new FileInputStream("C:\\Users\\abhic\\OneDrive\\Desktop\\LumaSigninData.xlsx");
 	    XSSFWorkbook wb=new XSSFWorkbook(fis);
 	    XSSFSheet datasheet=wb.getSheet("SigninData");
 		int dRows=datasheet.getLastRowNum();

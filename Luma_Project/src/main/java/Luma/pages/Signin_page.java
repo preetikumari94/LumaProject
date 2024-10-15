@@ -1,13 +1,11 @@
 package Luma.pages;
 
-import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class Signin_page {
 	
-  public static WebDriver driver;
-	
+    WebDriver driver;
 	public Signin_page(WebDriver driver)
 	{
 		this.driver = driver; }

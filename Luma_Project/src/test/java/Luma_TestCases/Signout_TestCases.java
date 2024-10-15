@@ -1,6 +1,7 @@
 package Luma_TestCases;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -9,15 +10,24 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import Luma.pages.Signout_page;
-import Luma.pages.Signin_page;
-public class Signout_TestCases {
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) throws Exception {
-	WebDriver driver=new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+import Luma.pages.Signin_page;
+import Luma.pages.Signout_page;
+public class Signout_TestCases {
+    WebDriver driver;
+	Signin_page si;
+	Signout_page so;
 	
+	@BeforeMethod
+	public void launchBrowser() {
+	driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));}
+	
+	@Test
+	public void Signout_TC() throws IOException {
 	Signin_page si=new Signin_page(driver);
 	Signout_page so=new  Signout_page(driver);
 	

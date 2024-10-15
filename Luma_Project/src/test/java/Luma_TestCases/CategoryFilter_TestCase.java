@@ -4,6 +4,8 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Luma.pages.CategoryFilter_page;
 import Luma.pages.Gear_page;
@@ -12,17 +14,26 @@ import Luma.pages.Signin_page;
 import Luma.pages.Women_page;
 
 public class CategoryFilter_TestCase {
-	static WebDriver driver;
-	public static void main(String[] args) throws InterruptedException {
+ WebDriver driver;
+ Signin_page si;
+ Women_page wp;
+ Men_page mp;
+ Gear_page gp;
+ CategoryFilter_page cp;
+ 
+    @BeforeMethod
+	public void launchBrowser(){
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		 Signin_page si=new Signin_page(driver);
-		 Women_page wp=new Women_page(driver);
-		 Men_page mp=new Men_page(driver);
-		 Gear_page gp=new Gear_page(driver);
-		 CategoryFilter_page cp=new CategoryFilter_page(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));}
+ 
+	@Test
+	public void CategoryFilter_TC() {
+		 si=new Signin_page(driver);
+		 wp=new Women_page(driver);
+		 mp=new Men_page(driver);
+		 gp=new Gear_page(driver);
+		 cp=new CategoryFilter_page(driver);
 		 si.enterURL();
          si.clickSignInButton();
 	     si.enterUsername("xyz@123gmail.com");
@@ -70,9 +81,7 @@ public class CategoryFilter_TestCase {
          wp.clickWomenBottoms();
          cp.clickWomenBottomCategory();
          cp.clickWomenShorts();
-         wp.clickWomen();
-         wp.clickWomenBottoms();
-         cp.clickWomenBottomCategory();
+        
          
          mp.clickMen();
          mp.clickMenBottoms();

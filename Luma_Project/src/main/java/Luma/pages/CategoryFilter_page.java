@@ -5,33 +5,31 @@ import org.openqa.selenium.WebDriver;
 
 public class CategoryFilter_page {
 	WebDriver driver;
-	
-
 	public CategoryFilter_page(WebDriver driver) {
 		 this.driver = driver;
 	}
 
-	By WomenTopCategory =By.xpath("//div[@class='block filter']/div/div[1]/div[1]");
-	By WomenJackets =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[1]//a");
-	By WomenHoodiesAndSweatshirts =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[2]//a");
-	By WomenTees  =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[3]//a");
-	By WomenBrasAndTanks =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[4]//a");
+	By WomenTopCategory =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[1]");
+	By WomenJackets =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[2]/ol/li[1]/a");
+	By WomenHoodiesAndSweatshirts =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[2]/ol/li[2]/a");
+	By WomenTees  =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[2]/ol/li[3]/a");
+	By WomenBrasAndTanks =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[2]/ol/li[4]/a");
 	
-	By MenTopCategory =By.xpath("//div[@class='block filter']/div/div[1]/div[1]");
-	By MenJackets  =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[1]//a");
-	By MenHoodiesAndSweatshirts =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[2]//a");
-	By MenTees  =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[3]//a");
-	By MenTanks =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[4]//a");
+	By MenTopCategory =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[1]");
+	By MenJackets  =By.xpath("//div[@class='block filter']//div[2]//div[1]//div[1]//div[2]//ol//li[1]//a");
+	By MenHoodiesAndSweatshirts =By.xpath("//div[@class='block filter']//div[2]//div[1]//div[1]//div[2]//ol//li[2]//a");
+	By MenTees  =By.xpath("//div[@class='block filter']//div[2]//div[1]//div[1]//div[2]//ol//li[3]//a");
+	By MenTanks =By.xpath("//div[@class='block filter']//div[2]//div[1]//div[1]//div[2]//ol//li[4]//a");
 	
-	By WomenBottomCategory =By.xpath("//div[@class='block filter']/div/div[1]/div[1]");
-	By WomenPants =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[1]//a");
-	By WomenShorts =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[2]//a");
+	By WomenBottomCategory =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[1]");
+	By WomenPants =By.xpath("//div[@class='block filter']//div[2]/div[1]/div[1]//ol/li[1]/a");
+	By WomenShorts =By.xpath("//div[@class='block filter']//div[2]/div[1]/div[1]//ol/li[2]/a");
 	
-    By MenBottomCategory =By.xpath("//div[@class='block filter']/div/div[1]/div[1]");
-	By MenPants =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[1]//a");
-	By MenShorts =By.xpath("//div[@class='block filter']//div//div[1]//div[1]//div[2]//ol//li[2]//a");
+    By MenBottomCategory =By.xpath("//div[@class='block filter']/div[2]/div[1]/div[1]/div[1]");
+	By MenPants =By.xpath("//div[@class='block filter']//div[2]//div[1]//div[1]//div[2]//ol//li[1]//a");
+	By MenShorts =By.xpath("//div[@class='block filter']//div[2]//div[1]//div[1]//div[2]//ol//li[2]//a");
 		
-	By GearFitnessEquipmentCategory =By.xpath(".//div[@class='filter-options']//div//div[1]");
+	By GearFitnessEquipmentCategory =By.xpath("//div[@class='filter-options']//div//div[1]");
 	By GearFCardio =By.xpath("//div[@class='filter-options']//div//div[2]//ol//li[1]//a");
 	By GearFExercise =By.xpath("//div[@class='filter-options']//div//div[2]//ol//li[2]//a");
 	

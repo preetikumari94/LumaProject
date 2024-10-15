@@ -4,6 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Luma.pages.MyCart_page;
 import Luma.pages.PlaceOrder_page;
@@ -11,12 +14,20 @@ import Luma.pages.Signin_page;
 import Luma.pages.Women_page;
 
 public class PlaceOrder_TestCases {
-
-	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+	WebDriver driver;
+	 Signin_page si;
+	 Women_page wp;
+	 MyCart_page mc;
+	 PlaceOrder_page po;
+	 
+	 @BeforeMethod
+	public void launchBrowser() {
+	    driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));}
 		
+		@Test
+		public void PlaceOrder_TC () throws InterruptedException  {
 		 Signin_page si=new Signin_page(driver);
 		 Women_page wp=new Women_page(driver);
 		 MyCart_page mc=new MyCart_page(driver);

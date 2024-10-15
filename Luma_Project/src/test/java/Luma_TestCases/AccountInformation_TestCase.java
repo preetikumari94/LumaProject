@@ -10,6 +10,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Luma.pages.AccountInformation_page;
 import Luma.pages.MyAccount_page;
@@ -17,29 +19,37 @@ import Luma.pages.Signin_page;
 import Luma.pages.Signout_page;
 
 public class AccountInformation_TestCase {
+WebDriver driver;
+Signin_page si;
+Signout_page so;
+MyAccount_page ma;
+AccountInformation_page ai;
 
-	public static void main(String[] args) throws InterruptedException, IOException {
-		WebDriver driver=new ChromeDriver();
+@BeforeMethod
+public void launchBrowser() {
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		
-		Signin_page si=new Signin_page(driver);
-		Signout_page so=new  Signout_page(driver);
-        MyAccount_page ma=new  MyAccount_page(driver);
-        AccountInformation_page ai=new  AccountInformation_page(driver);
-               si.enterURL();
-               si.clickSignInButton();
-               si.enterUsername("xyz@123gmail.com");
-               si.enterPassword("xyz12345#");
-               si.clickSignin();
-               so.clickWelcome_customerButton();
-               ma.clickMyAccount();
-               ai.clickAccountInformation();
-               
-           	String path=("C:\\Users\\abhic\\OneDrive\\Desktop\\LunaAccountInformationData.xlsx");
+		}
+@Test
+public void AccountInformation_TC() throws IOException {
+	Signin_page si=new Signin_page(driver);
+	Signout_page so=new  Signout_page(driver);
+	MyAccount_page ma=new  MyAccount_page(driver);
+	AccountInformation_page ai=new  AccountInformation_page(driver);
+		si.enterURL();
+        si.clickSignInButton();
+        si.enterUsername("xyz@123gmail.com");
+        si.enterPassword("xyz12345#");
+        si.clickSignin();
+        so.clickWelcome_customerButton();
+        ma.clickMyAccount();
+        ai.clickAccountInformation();
+        
+            String path=("C:\\Users\\abhic\\OneDrive\\Desktop\\LunaAccountInformationData.xlsx");
     		FileInputStream fis=new FileInputStream(path);
-    	    XSSFWorkbook wb=new XSSFWorkbook(fis);
+    		XSSFWorkbook wb=new XSSFWorkbook(fis);
     	    XSSFSheet datasheet=wb.getSheet("AccountInformationData");
     		int dRows=datasheet.getLastRowNum();
     		for(int i=1; i<=dRows; i++) {
@@ -68,21 +78,18 @@ public class AccountInformation_TestCase {
     				ai.enterConfirmPassword(confirmPassword.toString());
     				ai.clickSave();
     				
-    				
-    				
-    				
-    			    System.out.println("Valid");
+    				  System.out.println("Valid");
     			
     			}catch(Exception e) {
     				System.out.println("Invalid");
     			}
+    			    
     			}
-
     		 driver.close();
+}}
+	
 
-	}
 
 
-	}
 
 

@@ -4,19 +4,26 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Luma.pages.Gear_page;
 import Luma.pages.Signin_page;
 
 public class Gear_TestCases {
-
-	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+	WebDriver driver;
+	 Signin_page si;
+	 Gear_page gp;
+	 @BeforeMethod
+	public void launchBrowser() {
+	    driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));}
 		
-		 Signin_page si=new Signin_page(driver);
-		 Gear_page gp=new Gear_page(driver);
+	@Test
+	public void Gear_TC() {
+		         si=new Signin_page(driver);
+		         gp=new Gear_page(driver);
                  si.enterURL();
                  si.clickSignInButton();
   		         si.enterUsername("xyz@123gmail.com");

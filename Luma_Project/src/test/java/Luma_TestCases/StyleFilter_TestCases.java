@@ -5,8 +5,9 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-import Luma.pages.CategoryFilter_page;
 import Luma.pages.Gear_page;
 import Luma.pages.Men_page;
 import Luma.pages.Signin_page;
@@ -14,13 +15,21 @@ import Luma.pages.StyleFilter_page;
 import Luma.pages.Women_page;
 
 public class StyleFilter_TestCases {
-  static WebDriver driver;
-	public static void main(String[] args) throws InterruptedException {
+	WebDriver driver;
+	 Signin_page si;
+	 Women_page wp;
+	 Men_page mp;
+	 Gear_page gp;
+	 StyleFilter_page sp;
+	 
+	 @BeforeMethod
+	    public void launchBrowser() {
 		 driver=new ChromeDriver();
-		driver.manage().window().maximize();
-		
-		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		
+		 driver.manage().window().maximize();
+		 WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));}
+	 
+		 @Test
+		public void StyleFilter_TC() throws InterruptedException {
 		 Signin_page si=new Signin_page(driver);
 		 Women_page wp=new Women_page(driver);
 		 Men_page mp=new Men_page(driver);

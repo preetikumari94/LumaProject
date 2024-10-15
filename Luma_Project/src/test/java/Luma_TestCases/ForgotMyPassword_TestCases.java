@@ -10,19 +10,27 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Luma.pages.ForgotMyPassword_page;
 import Luma.pages.Signin_page;
 
 public class ForgotMyPassword_TestCases {
-
-	public static void main(String[] args) throws IOException, InterruptedException {
-		WebDriver driver=new ChromeDriver();
+	WebDriver driver;
+	Signin_page si;
+	ForgotMyPassword_page fp;
+	
+	@BeforeMethod
+	public  void launchBrowser()  {
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		Signin_page si=new Signin_page(driver);
-		ForgotMyPassword_page fp= new ForgotMyPassword_page (driver);
+	}
+	@Test
+	   public void ForgotMyPassword_TC() throws IOException {
+		si=new Signin_page(driver);
+	    fp= new ForgotMyPassword_page (driver);
 		si.enterURL();
 		si.clickSignInButton();
 		

@@ -10,18 +10,25 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import Luma.pages.Search_page;
 import Luma.pages.Signin_page;
 
 public class Search_TestCases {
-
+	WebDriver driver;
+	Signin_page si;
+	Search_page sh;
 	
-	public static void main(String[] args) throws IOException, InterruptedException {
-		WebDriver driver=new ChromeDriver();
+	@BeforeMethod
+	public void launchBrowser(){
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));}
+	
+		@Test
+		public void Search_TC() throws IOException {
 		Signin_page si=new Signin_page(driver);
 		Search_page sh=new Search_page(driver);
 		 si.enterURL();
